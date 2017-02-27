@@ -32,7 +32,41 @@
 @import "../valo/valo.scss";
 
 @mixin mytheme {
-  @include valo;
+    @include valo;
 
-  // Insert your own theme rules here
+
+
+
+    .v-panel-meniuPanel{
+        max-width: 800px;
+          height: 100px;
+          
+    }
+    .v-panel-mainPanel{
+        max-width: 800px;
+       
+    }
+    
+    .v-vertical-layStyle{
+        margin-top: 100px;
+        color: bisque;
+    }
+    
+    .v-label-mainPanelLabel{
+        max-width: 400px;
+    }
+
+    .v-label-meniuLabel{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .v-label-meniuLabel:hover{
+        font-size: 20px;
+        font-weight: bold;
+        background: green;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+
+    // Insert your own theme rules here
 }

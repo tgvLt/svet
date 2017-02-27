@@ -12984,3 +12984,34 @@ div.v-layout.v-horizontal.v-widget {
 	width: 19px;
 	overflow: hidden;
 }
+
+.mytheme .v-panel-meniuPanel {
+	max-width: 800px;
+	height: 100px;
+}
+
+.mytheme .v-panel-mainPanel {
+	max-width: 800px;
+}
+
+.mytheme .v-vertical-layStyle {
+	margin-top: 100px;
+	color: bisque;
+}
+
+.mytheme .v-label-mainPanelLabel {
+	max-width: 400px;
+}
+
+.mytheme .v-label-meniuLabel {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.mytheme .v-label-meniuLabel:hover {
+	font-size: 20px;
+	font-weight: bold;
+	background: green;
+	padding-top: 5px;
+	cursor: pointer;
+}
