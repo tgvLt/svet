@@ -35,6 +35,8 @@ public class MyUI extends UI {
                     + ", it works!"));
         });
         
+        Label nauja = new Label("");
+        
         layout.addComponents(name, button);
         layout.setMargin(true);
         layout.setSpacing(true);
