@@ -31,27 +31,92 @@
 
 @import "../valo/valo.scss";
 
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes fade {
+        from {
+            opacity: .4;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+
 @mixin mytheme {
     @include valo;
 
 
 
 
+
+
+
+
+
+    .test {
+        -webkit-animation: test 5s infinite; 
+        animation: test 5s infinite;
+    }
+
+
     .v-panel-meniuPanel{
         max-width: 800px;
-          height: 100px;
-          
+        height: 100px;
     }
+    .v-panel-slideMeniuPanel{
+        max-width: 800px;
+        height: 300px;
+    }
+
+
+
+
+    .v-panel-slideMeniuPanel1{
+        max-width: 800px;
+        height: 300px;
+        background: green;//url("img/road.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .v-panel-slideMeniuPanel2{
+        max-width: 800px;
+        height: 300px;
+        background: blue;//url("img/mountain.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+
+
+
+
+
     .v-panel-mainPanel{
         max-width: 800px;
-       
     }
-    
+
     .v-vertical-layStyle{
         margin-top: 100px;
         color: bisque;
     }
-    
+
+    .v-imgage-imgResp{
+        width: 100%;
+        height: auto;
+    }
+
     .v-label-mainPanelLabel{
         max-width: 400px;
     }

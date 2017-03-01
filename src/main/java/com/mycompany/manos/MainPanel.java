@@ -60,6 +60,10 @@ public class MainPanel extends Panel {
         layout.addComponent(panel1);
         layout.addComponent(panel2);
         
+        Label test = new Label("Bandom mirkset");
+        //test.setStyleName("test");
+           layout.addComponent(test);
+        
         panel1.setWidth("300px");
         panel2.setWidth("300px");
         

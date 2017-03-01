@@ -77,6 +77,7 @@ public class SimpleLoginView extends CustomComponent implements View,
         loginButton = new Button("Login", this);
 
         Meniu meniu = new Meniu();
+        SlideMeniu slideMeniu = new SlideMeniu();
         MainPanel mainPanel = new MainPanel();
 
         // Add both to a panel
@@ -90,7 +91,7 @@ public class SimpleLoginView extends CustomComponent implements View,
         Label tarpas = new Label("");
         tarpas.setHeight("100px");
         // The view root layout
-        VerticalLayout viewLayout = new VerticalLayout(meniu, tarpas, mainPanel, fields);
+        VerticalLayout viewLayout = new VerticalLayout(meniu, slideMeniu, mainPanel, fields);
         viewLayout.setStyleName("layStyle");
         viewLayout.setHeightUndefined();
         
@@ -100,6 +101,7 @@ public class SimpleLoginView extends CustomComponent implements View,
         viewLayout.setSpacing(false);
         viewLayout.setComponentAlignment(fields, Alignment.MIDDLE_CENTER);
         viewLayout.setComponentAlignment(meniu, Alignment.TOP_CENTER);
+        viewLayout.setComponentAlignment(slideMeniu, Alignment.TOP_CENTER);
         viewLayout.setComponentAlignment(mainPanel, Alignment.TOP_CENTER);
 
         viewLayout.setStyleName(Reindeer.LAYOUT_BLUE);
