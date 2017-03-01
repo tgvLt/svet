@@ -17,7 +17,7 @@ import com.vaadin.ui.Panel;
 public class Meniu extends Panel {
 
     public Meniu() {
-        setStyleName("meniuPanel");
+        setStyleName("meniuFixed");
         Label pirmas = new Label("Pirmas");
         Label antras = new Label("Antras");
         Label trecias = new Label("Trecias");

@@ -76,9 +76,10 @@ public class SimpleLoginView extends CustomComponent implements View,
         // Create login button
         loginButton = new Button("Login", this);
 
-        Meniu meniu = new Meniu();
+        FixedMeniuPanel meniu = new FixedMeniuPanel();
         SlideMeniu slideMeniu = new SlideMeniu();
         MainPanel mainPanel = new MainPanel();
+      
 
         // Add both to a panel
         VerticalLayout fields = new VerticalLayout(user, password, loginButton);
@@ -100,13 +101,15 @@ public class SimpleLoginView extends CustomComponent implements View,
         //viewLayout.setWidth("100%");
         viewLayout.setSpacing(false);
         viewLayout.setComponentAlignment(fields, Alignment.MIDDLE_CENTER);
-        viewLayout.setComponentAlignment(meniu, Alignment.TOP_CENTER);
+       // viewLayout.setComponentAlignment(meniu, Alignment.TOP_CENTER);
         viewLayout.setComponentAlignment(slideMeniu, Alignment.TOP_CENTER);
         viewLayout.setComponentAlignment(mainPanel, Alignment.TOP_CENTER);
 
         viewLayout.setStyleName(Reindeer.LAYOUT_BLUE);
         setCompositionRoot(viewLayout);
         setHeightUndefined();
+        
+        
     }
 
     @Override

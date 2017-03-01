@@ -32,22 +32,22 @@
 @import "../valo/valo.scss";
 
 
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4;
-        }
-        to {
-            opacity: 1;
-        }
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
     }
-    @keyframes fade {
-        from {
-            opacity: .4;
-        }
-        to {
-            opacity: 1;
-        }
+    to {
+        opacity: 1;
     }
+}
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 
 @mixin mytheme {
@@ -65,38 +65,32 @@
         -webkit-animation: test 5s infinite; 
         animation: test 5s infinite;
     }
+    
+    
+    .v-panel-meniuFixed{
+        max-width: 800px;
+        left: 10px; right: 10px;
+    }
 
 
     .v-panel-meniuPanel{
-        max-width: 800px;
-        height: 100px;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        z-index: 999;
+        margin: auto;
+        background: transparent;
+        left: 10px;
+        margin-right: 10px;
+         margin-left: 10px;
+       // width: 50%;
     }
     .v-panel-slideMeniuPanel{
         max-width: 800px;
         height: 300px;
+        position: relative;
     }
 
-
-
-
-    .v-panel-slideMeniuPanel1{
-        max-width: 800px;
-        height: 300px;
-        background: green;//url("img/road.jpg") no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-    .v-panel-slideMeniuPanel2{
-        max-width: 800px;
-        height: 300px;
-        background: blue;//url("img/mountain.jpg") no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
 
 
 
@@ -105,6 +99,7 @@
 
     .v-panel-mainPanel{
         max-width: 800px;
+        position: relative;
     }
 
     .v-vertical-layStyle{

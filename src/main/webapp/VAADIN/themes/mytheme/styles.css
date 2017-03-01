@@ -13008,38 +13008,33 @@ div.v-layout.v-horizontal.v-widget {
 	animation: test 5s infinite;
 }
 
-.mytheme .v-panel-meniuPanel {
+.mytheme .v-panel-meniuFixed {
 	max-width: 800px;
-	height: 100px;
+	left: 10px;
+	right: 10px;
+}
+
+.mytheme .v-panel-meniuPanel {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 999;
+	margin: auto;
+	background: transparent;
+	left: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 .mytheme .v-panel-slideMeniuPanel {
 	max-width: 800px;
 	height: 300px;
-}
-
-.mytheme .v-panel-slideMeniuPanel1 {
-	max-width: 800px;
-	height: 300px;
-	background: green;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-.mytheme .v-panel-slideMeniuPanel2 {
-	max-width: 800px;
-	height: 300px;
-	background: blue;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	position: relative;
 }
 
 .mytheme .v-panel-mainPanel {
 	max-width: 800px;
+	position: relative;
 }
 
 .mytheme .v-vertical-layStyle {
