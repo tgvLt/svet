@@ -32,22 +32,7 @@
 @import "../valo/valo.scss";
 
 
-@-webkit-keyframes fade {
-    from {
-        opacity: .4;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@keyframes fade {
-    from {
-        opacity: .4;
-    }
-    to {
-        opacity: 1;
-    }
-}
+
 
 
 @mixin mytheme {
@@ -61,30 +46,34 @@
 
 
 
+
+
+
     .test {
         -webkit-animation: test 5s infinite; 
         animation: test 5s infinite;
     }
-    
-    
-    .v-panel-meniuFixed{
+
+
+    .meniuFixed[width-range ~="801px-"] {
         max-width: 800px;
-        left: 10px; right: 10px;
-    }
-
-
-    .v-panel-meniuPanel{
-        width: 100%;
-        height: 50px;
+        left: 0px; right: 17px;
         position: fixed;
         z-index: 999;
-        margin: auto;
-        background: transparent;
-        left: 10px;
-        margin-right: 10px;
-         margin-left: 10px;
-       // width: 50%;
+        //overflow-y: scroll;
+        background: orange;
     }
+    .meniuFixed[width-range ~="0px-800px"] {
+        max-width: 800px;
+        left: 0px; right: 0px;
+        position: fixed;
+        z-index: 999;
+        // overflow-y: scroll;
+        background: green;
+        margin-right: 17px; 
+    }
+
+
     .v-panel-slideMeniuPanel{
         max-width: 800px;
         height: 300px;
@@ -120,6 +109,7 @@
         font-size: 20px;
         font-weight: bold;
     }
+
     .v-label-meniuLabel:hover{
         font-size: 20px;
         font-weight: bold;
